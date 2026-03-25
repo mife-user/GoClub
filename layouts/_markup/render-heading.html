@@ -1,0 +1,12 @@
+{{ if eq .Level 1 }}
+<h1 id="{{ .Anchor }}" {{- with .Attributes.class -}}class="{{ . }}"{{- end -}}>
+  <a class="page-home-link" href="{{ "/" | relURL }}">{{- .Text -}}</a>
+</h1>
+{{ else }}
+<h{{ .Level }} id="{{ .Anchor }}" {{- with .Attributes.class -}}class="{{ . }}"{{- end -}}>
+  {{- .Text -}}
+  {{- if default true .Attributes.anchor -}}
+  <a class="anchor" href="#{{ .Anchor }}">#</a>
+  {{- end -}}
+</h{{ .Level }}>
+{{ end }}
