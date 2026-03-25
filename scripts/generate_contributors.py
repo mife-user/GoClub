@@ -22,6 +22,13 @@ def request_json(url, token=None):
         return json.loads(response.read().decode("utf-8"))
 
 
+def load_json_file(path, default):
+    if not os.path.exists(path):
+        return default
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def fetch_all_merged_prs(repo, token=None):
     page = 1
     merged = []
@@ -65,10 +72,38 @@ def build_contributors(prs):
     return sorted(grouped.values(), key=lambda item: (-item["merged_prs"], item["login"].lower()))
 
 
+def merge_maintainers(maintainers, contributors):
+    merged = {}
+
+    for contributor in contributors:
+        merged[contributor["login"]] = contributor
+
+    for maintainer in maintainers:
+        login = maintainer["login"]
+        if login in merged:
+            merged[login] = {
+                **merged[login],
+                **maintainer,
+                "merged_prs": merged[login].get("merged_prs", 0),
+            }
+        else:
+            merged[login] = maintainer
+
+    return sorted(
+        merged.values(),
+        key=lambda item: (
+            0 if item.get("pinned") else 1,
+            -item.get("merged_prs", 0),
+            item["login"].lower(),
+        ),
+    )
+
+
 def main():
     repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
     token = os.environ.get("GITHUB_TOKEN", "").strip() or None
     output = os.environ.get("CONTRIBUTORS_OUTPUT", "data/contributors.json")
+    maintainers_path = os.environ.get("MAINTAINERS_INPUT", "data/maintainers.json")
 
     if not repo:
         print("Missing GITHUB_REPOSITORY", file=sys.stderr)
@@ -76,6 +111,8 @@ def main():
 
     prs = fetch_all_merged_prs(repo, token=token)
     contributors = build_contributors(prs)
+    maintainers = load_json_file(maintainers_path, [])
+    contributors = merge_maintainers(maintainers, contributors)
 
     os.makedirs(os.path.dirname(output), exist_ok=True)
     with open(output, "w", encoding="utf-8") as f:

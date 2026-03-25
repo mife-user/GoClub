@@ -3,7 +3,7 @@
     {{- .Content -}}
 
     {{ if eq .File.Path "docs/contributors/_index.md" }}
-      {{ $contributors := site.Data.contributors }}
+      {{ $contributors := hugo.Data.contributors }}
       <section class="contributors-section">
         {{ if $contributors }}
           <div class="contributors-grid">
@@ -21,6 +21,9 @@
                   <h2 class="contributor-name">
                     <a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .login }}</a>
                   </h2>
+                  {{ with .role }}
+                    <p class="contributor-role">{{ . }}</p>
+                  {{ end }}
                   {{ with .name }}
                     <p class="contributor-fullname">{{ . }}</p>
                   {{ end }}
@@ -33,7 +36,7 @@
             {{ end }}
           </div>
         {{ else }}
-          <p>当前还没有检测到已合并 PR 的贡献者。</p>
+          <p>当前还没有检测到贡献者数据。</p>
         {{ end }}
       </section>
     {{ end }}
