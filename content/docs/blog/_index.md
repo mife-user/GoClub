@@ -11,4 +11,4 @@ bookCollapseSection: true
 ## 当前内容
 
 - [GoClub项目介绍]({{< relref "/docs/project.md" >}})
-- [程序员羊肉笔记]({{< relref "/docs/blog/onenotes.md" >}})
+- [mife-user笔记]({{< relref "/docs/blog/onenotes.md" >}})
