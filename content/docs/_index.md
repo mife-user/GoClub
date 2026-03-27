@@ -28,7 +28,9 @@ bookCollapseSection: false
 
 ### 面试真题
 
-- [深圳多方维]({{< relref "/docs/interview/深圳多方维.md" >}})
+- [大厂面试]({{< relref "/docs/interview/dachang/_index.md" >}})
+- [中厂面试]({{< relref "/docs/interview/zhongchang/_index.md" >}})
+- [小厂面试]({{< relref "/docs/interview/xiaochang/_index.md" >}})
 
 ### 八股总结
 

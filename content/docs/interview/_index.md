@@ -10,6 +10,6 @@ bookCollapseSection: true
 
 ## 当前内容
 
-- [深圳多方维]({{< relref "/docs/interview/深圳多方维.md" >}})
-- [腾讯]({{< relref "/docs/interview/腾讯.md" >}})
-- [小红书]({{< relref "/docs/interview/小红书.md" >}})
+- [大厂面试合集]({{< relref "/docs/interview/dachang/_index.md" >}})
+- [中厂面试合集]({{< relref "/docs/interview/zhongchang/_index.md" >}})
+- [小厂面试合集]({{< relref "/docs/interview/xiaochang/_index.md" >}})
