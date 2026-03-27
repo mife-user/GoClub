@@ -10,4 +10,4 @@ bookCollapseSection: true
 
 ## 当前内容
 
-- [深圳多方维]({{< relref "/docs/interview/xiaochang/深圳多方维.md" >}})
+- [深圳多方维面试题]({{< relref "/docs/interview/xiaochang/深圳多方维.md" >}})
