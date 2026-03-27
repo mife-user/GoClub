@@ -10,5 +10,5 @@ bookCollapseSection: true
 
 ## 当前内容
 
-- [1.腾讯一面]({{< relref "/docs/interview/dachang/腾讯.md" >}})
-- [1.小红书一面]({{< relref "/docs/interview/dachang/小红书.md" >}})
+- [1.腾讯一面]({{< relref "/docs/interview/dachang/1.腾讯一面.md" >}})
+- [1.小红书一面]({{< relref "/docs/interview/dachang/1.小红书一面.md" >}})
