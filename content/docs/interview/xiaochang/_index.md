@@ -1,10 +1,10 @@
 ---
 title: "小厂面试"
-weight: 10
+weight: 3
 bookCollapseSection: true
 ---
 
-# 大厂面试
+# 小厂面试
 
 这里收录小厂相关面试真题。
 

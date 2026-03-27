@@ -1,6 +1,6 @@
 ---
 title: "中厂面试"
-weight: 10
+weight: 2
 bookCollapseSection: true
 ---
 
