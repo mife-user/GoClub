@@ -1,11 +1,13 @@
 ---
-title: "项目介绍"
+title: "GoClub项目介绍"
 type: docs
 bookToC: true
-bookHidden: true
+weight: 2
+aliases:
+  - /docs/project/
 ---
 
-# GoClub
+# GoClub项目介绍
 
 GoClub 是一个围绕技术面试准备与系统复习搭建的内容站点，主要聚焦面试真题、八股总结、资料视频、项目推荐，以及视频配套文章等内容。
 

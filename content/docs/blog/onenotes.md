@@ -1,7 +1,6 @@
 ---
 title: "Go语言相关笔记"
-weight: 2
-bookHidden: true
+weight: 3
 type: docs
 ---
 

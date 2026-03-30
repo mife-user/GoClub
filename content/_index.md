@@ -32,7 +32,7 @@ GoClub 目前主要覆盖以下内容：
 
 - [面试真题](./docs/interview/)
 - [八股总结](./docs/baguwen/)
-- 资源荟萃
+- [资源荟萃](./docs/resources/)
 - [配套文章](./docs/companion/)
 - [技术博客](./docs/blog/)
 - [贡献者](./docs/contributors/)
@@ -43,6 +43,7 @@ GoClub 目前主要覆盖以下内容：
 - [投稿与提交流程](./docs/blog/提交流程/)
 - [面试真题](./docs/interview/)
 - [八股总结](./docs/baguwen/)
+- [资源荟萃](./docs/resources/)
 - [配套文章](./docs/companion/)
 - [技术博客](./docs/blog/)
 - [贡献者](./docs/contributors/)

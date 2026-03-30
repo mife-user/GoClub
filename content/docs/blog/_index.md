@@ -11,6 +11,6 @@ bookCollapseSection: true
 ## 当前内容
 
 - [投稿与提交流程]({{< relref "/docs/blog/提交流程.md" >}})
-- [GoClub项目介绍]({{< relref "/docs/project.md" >}})
-- [mife-user笔记]({{< relref "/docs/blog/onenotes.md" >}})
+- [GoClub项目介绍]({{< relref "/docs/blog/project.md" >}})
+- [Go语言相关笔记]({{< relref "/docs/blog/onenotes.md" >}})
 - [网站分享]({{< relref "/docs/blog/网站分享.md" >}})

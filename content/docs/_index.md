@@ -20,6 +20,7 @@ bookCollapseSection: false
 
 - [面试真题]({{< relref "/docs/interview/_index.md" >}})
 - [八股总结]({{< relref "/docs/baguwen/_index.md" >}})
+- [资源荟萃]({{< relref "/docs/resources/_index.md" >}})
 - [配套文章]({{< relref "/docs/companion/_index.md" >}})
 - [技术博客]({{< relref "/docs/blog/_index.md" >}})
 - [贡献者]({{< relref "/docs/contributors/_index.md" >}})
@@ -41,6 +42,10 @@ bookCollapseSection: false
 - [计算机网络八股]({{< relref "/docs/baguwen/CN.md" >}})
 - [RabbitMQ 八股]({{< relref "/docs/baguwen/RabbitMQ.md" >}})
 
+### 资源荟萃
+
+- [好书分享]({{< relref "/docs/resources/好书分享.md" >}})
+
 ### 配套文章
 
 这里用于承接视频内容、直播内容或其他材料的文字补充说明。
@@ -50,8 +55,8 @@ bookCollapseSection: false
 
 ### 技术博客
 
-- [GoClub项目介绍]({{< relref "/docs/project.md" >}})
-- [mife-user笔记]({{< relref "/docs/blog/onenotes.md" >}})
+- [GoClub项目介绍]({{< relref "/docs/blog/project.md" >}})
+- [Go语言相关笔记]({{< relref "/docs/blog/onenotes.md" >}})
 
 ### 贡献者
 
