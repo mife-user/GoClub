@@ -1,7 +1,7 @@
-# Hugo build output
-public/
-resources/
-.hugo_build.lock
+# Hugo build output at repo root
+/public/
+/resources/
+/.hugo_build.lock
 
 # macOS
 .DS_Store
